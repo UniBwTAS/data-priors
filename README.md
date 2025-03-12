@@ -64,7 +64,7 @@ $ accelerate launch inference.py
 ### 4. Train on the compound dataset
 Now that you have generated labels with priors
 ```
-$ accelerate launch inference.py
+$ accelerate launch train.py --config config.yaml --exper_name <experiment_name>
 ```
 
 ## Inference
