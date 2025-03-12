@@ -79,5 +79,5 @@ $ accelerate launch inference.py
 ## TODOs
 
 - [x] Publish weights
-- [ ] Simpler config files (too many legacy parameters)
+- [x] Simpler config files (too many legacy parameters)
 - [ ] Code cleanup, remove legacy code
