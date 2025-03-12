@@ -1,0 +1,19 @@
+accelerate
+imageio
+imgaug
+numpy
+opencv-python
+scikit-image
+scipy
+shapely
+tensorboard
+torch
+torchaudio
+torchvision
+tqdm
+transformers
+pyyaml
+evaluate
+matplotlib
+pillow
+protobuf==4.25.3 # protobuf 5.26.0 breaks tensorboard: https://github.com/dbt-labs/dbt-core/issues/9759

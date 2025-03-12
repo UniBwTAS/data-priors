@@ -1,0 +1,5 @@
+0,name,id,trainId,category,categoryId,hasInstances,ignoreInEval,color
+0,void,0,0,,,,,
+1,road,1,1,,,,,
+2,lane_mark_solid,2,2,,,,,
+3,lane_mark_dashed,3,3,,,,,

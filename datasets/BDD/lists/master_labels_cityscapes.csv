@@ -1,0 +1,21 @@
+,name,
+0,road,road
+1,sidewalk,sidewalk
+2,building,building
+3,wall,wall
+4,fence,fence
+5,pole,pole
+6,traffic light,traffic light
+7,traffic sign,traffic sign
+8,vegetation,vegetation
+9,terrain,terrain
+10,sky,sky
+11,person,person
+12,rider,rider
+13,car,car
+14,truck,truck
+15,bus,bus
+16,train,train
+17,motorcycle,motorcycle
+18,bicycle,bicycle
+255,void,void

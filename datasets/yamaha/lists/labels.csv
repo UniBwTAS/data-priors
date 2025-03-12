@@ -1,0 +1,10 @@
+0,name,id,trainId,category,categoryId,hasInstances,ignoreInEval,color
+0,background,0,0,,,,,
+1,high_vegetation,1,1,,,,,
+2,traversable_grass,2,2,,,,,
+3,smooth_trail,3,3,,,,,
+4,obstacle,4,4,,,,,
+5,sky,5,5,,,,,
+6,rough_trail,6,6,,,,,
+7,puddle,7,7,,,,,
+8,non_traversable_low_vegetation,8,8,,,,,

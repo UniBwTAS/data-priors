@@ -1,0 +1,135 @@
+id,name,
+0,person,person
+1,bicycle,bicycle
+2,car,car
+3,motorcycle,motorcycle
+4,airplane,airplane
+5,bus,bus
+6,train,train
+7,truck,truck
+8,boat,boat
+9,traffic light,traffic light
+10,fire hydrant,fire hydrant
+11,stop sign,stop sign
+12,parking meter,parking meter
+13,bench,bench
+14,bird,bird
+15,cat,cat
+16,dog,dog
+17,horse,horse
+18,sheep,sheep
+19,cow,cow
+20,elephant,elephant
+21,bear,bear
+22,zebra,zebra
+23,giraffe,giraffe
+24,backpack,backpack
+25,umbrella,umbrella
+26,handbag,handbag
+27,tie,tie
+28,suitcase,suitcase
+29,frisbee,frisbee
+30,skis,skis
+31,snowboard,snowboard
+32,sports ball,sports ball
+33,kite,kite
+34,baseball bat,baseball bat
+35,baseball glove,baseball glove
+36,skateboard,skateboard
+37,surfboard,surfboard
+38,tennis racket,tennis racket
+39,bottle,bottle
+40,wine glass,wine glass
+41,cup,cup
+42,fork,fork
+43,knife,knife
+44,spoon,spoon
+45,bowl,bowl
+46,banana,banana
+47,apple,apple
+48,sandwich,sandwich
+49,orange,orange
+50,broccoli,broccoli
+51,carrot,carrot
+52,hot dog,hot dog
+53,pizza,pizza
+54,donut,donut
+55,cake,cake
+56,chair,chair
+57,couch,couch
+58,potted plant,potted plant
+59,bed,bed
+60,dining table,dining table
+61,toilet,toilet
+62,tv,tv
+63,laptop,laptop
+64,mouse,mouse
+65,remote,remote
+66,keyboard,keyboard
+67,cell phone,cell phone
+68,microwave,microwave
+69,oven,oven
+70,toaster,toaster
+71,sink,sink
+72,refrigerator,refrigerator
+73,book,book
+74,clock,clock
+75,vase,vase
+76,scissors,scissors
+77,teddy bear,teddy bear
+78,hair drier,hair drier
+79,toothbrush,toothbrush
+80,banner,banner
+81,blanket,blanket
+82,bridge,bridge
+83,cardboard,cardboard
+84,counter,counter
+85,curtain,curtain
+86,door-stuff,door-stuff
+87,floor-wood,floor-wood
+88,flower,flower
+89,fruit,fruit
+90,gravel,gravel
+91,house,house
+92,light,light
+93,mirror-stuff,mirror-stuff
+94,net,net
+95,pillow,pillow
+96,platform,platform
+97,playingfield,playingfield
+98,railroad,railroad
+99,river,river
+100,road,road
+101,roof,roof
+102,sand,sand
+103,sea,sea
+104,shelf,shelf
+105,snow,snow
+106,stairs,stairs
+107,tent,tent
+108,towel,towel
+109,wall-brick,wall-brick
+110,wall-stone,wall-stone
+111,wall-tile,wall-tile
+112,wall-wood,wall-wood
+113,water-other,water-other
+114,window-blind,window-blind
+115,window-other,window-other
+116,tree-merged,tree-merged
+117,fence-merged,fence-merged
+118,ceiling-merged,ceiling-merged
+119,sky-other-merged,sky-other-merged
+120,cabinet-merged,cabinet-merged
+121,table-merged,table-merged
+122,floor-other-merged,floor-other-merged
+123,pavement-merged,pavement-merged
+124,mountain-merged,mountain-merged
+125,grass-merged,grass-merged
+126,dirt-merged,dirt-merged
+127,paper-merged,paper-merged
+128,food-other-merged,food-other-merged
+129,building-other-merged,building-other-merged
+130,rock-merged,rock-merged
+131,wall-other-merged,wall-other-merged
+132,rug-merged,rug-merged
+255,void,void

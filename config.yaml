@@ -1,0 +1,115 @@
+dataset: [cityscapes, mapillaryvistas] # list here all the datasets that are involved in training (including validation)
+# options: camvid, lanes, a2d2, apolloscape, berkeleydeepdrive, coco, indiadrivingdataset, nuimages, waymo, cityscapes
+  # mapillaryvistas, goose, rellis3d, tas500, yamaha, freiburgforest
+
+seg_task: semantic                     # semantic is currently the only option
+size: base                             # large, base
+source_dataset: goose                  # dataset to perform validation on
+validation_datasets: [goose]           # validation datasets (usually source dataset + wilddash)
+master_labels: master_labels_offroad   # master_labels_cityscapes, master_labels_offroad, master_labels_mapillary (ontology mapping)
+train_with_val: [rellis3d, tas500, yamaha, freiburgforest, cityscapes] # merge train+val to new train set
+pseudo_labels_root: /mnt/beegfs/ssd/lrt81/datasets/generated_labels/AdamW_goose_val_ft
+color_map: offroad                     # offroad, cityscapes, mapillary
+
+training_params:
+  batch_size: 4             # batch size per GPU
+  epochs: 100
+  num_workers: 16
+  validation_interval: 1    # validate at every ith epoch
+  save_interval: 500        # never save unless best
+  save_best: true           # only save if best
+  first_epoch_save: 1       # don't save until this epoch
+  dataset_weights:          # for weighted random sampling (default is 1)
+    goose: 1.
+
+augmentation:
+  base:
+    image_dim:
+      height: 750
+      width: 1536
+    max_crop_size: 14400    # capped so as to not lose too much detail when scaling down
+    min_crop_size: 240      # lower bound for how small a crop can be
+    max_crop_scale: 0.95
+    min_crop_scale: 0.67    # multiplies max(max_crop_size, longest_image_dim)
+    flip: 0.5
+    brightness: [0.85, 1.15]
+    contrast: [0.85, 1.15]
+    hue_shift: [-3, 3]
+    saturation: [0.85, 1.15]
+    blur_prob: 0.005
+    gaussian_noise: 0.01
+    noise_prob: 0.0025
+    affine:
+      shear: [-2, 2]
+  # dataset-specific augmentations
+  tas500:
+    max_crop_scale: 0.66
+    min_crop_scale: 0.33
+  freiburgforest:
+    max_crop_scale: 0.8
+    min_crop_scale: 0.45
+
+optimizer:
+  freeze_backbone: false
+  name: AdamW
+  Adam:
+    lr: 0.0001
+    weight_decay: 0.0
+  AdamW:
+    encoder_lr: 0.00001
+    lr: 0.0001
+    weight_decay: 0.05
+  SGD:
+    lr: 0.01
+    momentum: 0.9
+    weight_decay: 0.00005
+    nesterov: true
+
+lr_scheduler:
+  name: MultiStepLR
+  warmup_epochs: 1
+  PolynomialLR:
+    power: 0.9
+  MultiStepLR:
+    gamma: 0.1
+    milestones: [0.9, 0.95] # of total epochs
+  CosineAnnealingLR:
+    eta_min: 0.000001
+
+patience: 15
+
+pretrained: facebook/mask2former-swin-base-mapillary-vistas-semantic # huggingface pretrained model or local path
+
+resume: false     # resume training if interrupted
+init_head: false  # randomly initialize model head
+gradclip: 1.0     # clip gradients to this value
+
+model_config:
+  no_object_weight: 0.005 # weight for no-object class in loss
+
+tensorboard_imgs:
+  # goose
+  [2023-05-17_neubiberg_sunny__0387_1684329773645852992_windshield_vis.png,
+  2022-12-07_aying_hills__0004_1670420689172563910_windshield_vis.png,
+  2022-09-21_garching_uebungsplatz_2__0030_1663755316941382820_windshield_vis.png,
+  2023-01-20_aying_mangfall_2__0281_1674223309916427695_windshield_vis.png,
+   2023-05-17_neubiberg_sunny__0385_1684329752448334896_windshield_vis.png,
+   2023-05-17_neubiberg_sunny__0408_1684329845682458115_windshield_vis.png,
+   2023-05-15_neubiberg_rain__0665_1684158012214956761_windshield_vis.png,
+  # cityscapes
+  munster_000004_000019_leftImg8bit.png,
+  munster_000023_000019_leftImg8bit.png,
+  lindau_000009_000019_leftImg8bit.png,
+  # rellis-3d
+  frame001747-1581624827_450.jpg,
+  frame002280-1581624018_349.jpg,
+  frame002084-1581623998_749.jpg,
+  # tas500
+  1583845853912121762.png,
+  1583846363756252143.png,
+  # coco
+  000000001532.jpg,
+  000000001584.jpg,
+  # lanes
+  0060_Image12.jpg,
+  20220311153115_0023 049.jpg]

@@ -1,0 +1,7 @@
+0,name,id,trainId,category,categoryId,hasInstances,ignoreInEval,color
+0,void,0,0,,,,,
+1,road,1,1,,,,,
+2,grass,2,2,,,,,
+3,vegetation,3,3,,,,,
+4,tree,4,4,,,,,
+5,sky,5,5,,,,,

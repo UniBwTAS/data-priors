@@ -1,0 +1,27 @@
+0,name,id,trainId,category,categoryId,hasInstances,ignoreInEval,color
+0,unlabeled,0,0,,,,,#000000
+1,adult,1,1,,,,,#6c4014
+2,ambulance,2,2,,,,,#ffe5cc
+3,animal,3,3,,,,,#006600
+4,barrier,4,4,,,,,#00ff00
+5,bendy,5,5,,,,,#009999
+6,bicycle,6,6,,,,,#0080ff
+7,bicycle rack,7,7,,,,,#0000ff
+8,car,8,8,,,,,#ffff00
+9,child,9,9,,,,,#ff007f
+10,construction,10,10,,,,,#404040
+11,construction worker,11,11,,,,,#ff8000
+12,debris,12,12,,,,,#ff0000
+13,driveable surface,13,13,,,,,#994c00
+14,ego,14,14,,,,,#666600
+15,motorcycle,15,15,,,,,#660000
+16,personal mobility,16,16,,,,,#00ff80
+17,police,17,17,,,,,#cc99ff
+18,police officer,18,18,,,,,#6600cc
+19,pushable pullable,19,19,,,,,#ff99cc
+20,rigid,20,20,,,,,#006666
+21,stroller,21,21,,,,,#99ccff
+22,trafficcone,22,22,,,,,#66ffff
+23,trailer,23,23,,,,,#65650b
+24,truck,24,24,,,,,#72552f
+25,wheelchair,25,25,,,,,

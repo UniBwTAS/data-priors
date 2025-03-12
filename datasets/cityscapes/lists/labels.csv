@@ -1,0 +1,36 @@
+0,name,id,trainId,category,categoryId,hasInstances,ignoreInEval,color
+0,unlabeled,0,255,void,0,False,True,#000000
+1,ego vehicle,1,255,void,0,False,True,#000000
+2,rectification border,2,255,void,0,False,True,#000000
+3,out of roi,3,255,void,0,False,True,#000000
+4,static,4,255,void,0,False,True,#000000
+5,dynamic,5,255,void,0,False,True,#6f4a00
+6,ground,6,255,void,0,False,True,#510051
+7,road,7,0,flat,1,False,False,#804080
+8,sidewalk,8,1,flat,1,False,False,#f423e8
+9,parking,9,255,flat,1,False,True,#faaaa0
+10,rail track,10,255,flat,1,False,True,#e6968c
+11,building,11,2,construction,2,False,False,#464646
+12,wall,12,3,construction,2,False,False,#66669c
+13,fence,13,4,construction,2,False,False,#be9999
+14,guard rail,14,255,construction,2,False,True,#b4a5b4
+15,bridge,15,255,construction,2,False,True,#966464
+16,tunnel,16,255,construction,2,False,True,#96785a
+17,pole,17,5,object,3,False,False,#999999
+18,polegroup,18,255,object,3,False,True,#999999
+19,traffic light,19,6,object,3,False,False,#faaa1e
+20,traffic sign,20,7,object,3,False,False,#dcdc00
+21,vegetation,21,8,nature,4,False,False,#6b8e23
+22,terrain,22,9,nature,4,False,False,#98fb98
+23,sky,23,10,sky,5,False,False,#4682b4
+24,person,24,11,human,6,True,False,#dc143c
+25,rider,25,12,human,6,True,False,#ff0000
+26,car,26,13,vehicle,7,True,False,#00008e
+27,truck,27,14,vehicle,7,True,False,#000046
+28,bus,28,15,vehicle,7,True,False,#003c64
+29,caravan,29,255,vehicle,7,True,True,#00005a
+30,trailer,30,255,vehicle,7,True,True,#00006e
+31,train,31,16,vehicle,7,True,False,#005064
+32,motorcycle,32,17,vehicle,7,True,False,#0000e6
+33,bicycle,33,18,vehicle,7,True,False,#770b20
+34,license plate,-1,-1,vehicle,7,False,True,#00008e

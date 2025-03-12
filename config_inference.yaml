@@ -1,0 +1,20 @@
+seg_task: semantic # semantic is currently the only option
+dataset: [a2d2]
+master_labels: master_labels_cityscapes
+color_map: cityscapes # offroad, cityscapes, cityscapes
+
+pretrained: experiments/cs_ade_pre/checkpoints/6_best.pth
+
+extension: png
+num_workers: 2
+
+test_time_augmentation:
+  flip: true
+  scales: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2]
+
+save_results: false
+visualize: true
+use_priors: true
+show_extra: true
+save_softmax: false  # only works when show_extra is on
+color_map_extra: camvid_labels
