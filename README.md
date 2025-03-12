@@ -1,10 +1,8 @@
-# Knowledge Distillation for Semantic Segmentation
-A Label Space Unification Approach
+# Knowledge Distillation for Semantic Segmentation: A Label Space Unification Approach
 
 This is a complimentary repository to our paper: [Knowledge Distillation for Semantic Segmentation A Label Space Unification Approach](https://arxiv.org/abs/2502.19177).
 
-![example_output](figures/example.gif)
-![filtered_trajectory](figures/filter_points.gif "Removing keypoints on dynamic objects leads to a better trajectory estimation.")
+![method](figures/method.png)
 
 
 ## Installation
